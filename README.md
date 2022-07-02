@@ -60,9 +60,6 @@ Run the client
   python client.py
 ```
 
-## Documentation
-
-[Documentation](https://my-doc-wikijs.herokuapp.com/en/speech-recognition-socketio)
 
 
 ## Authors
