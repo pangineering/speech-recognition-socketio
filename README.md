@@ -1,71 +1,63 @@
-# What is MyProduct?
+---
+description: Project Document
+---
 
-{% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
-{% endhint %}
+# Project Document
 
-Here are a couple of examples of succinct overviews from products with really great docs:
+## Speech-recognition-socketio
 
-> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
->
-> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
->
-> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
+[![Made by - Pangineering](https://img.shields.io/badge/Made\_by-Pangineering-2ea44f)](https://github.com/pangineering) ![Status - In Progress](https://img.shields.io/badge/Status-Complete-FFCD22)
 
-> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
->
-> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
+This project is about building a socket.io server for receiving the .wav file path send by a client. The server then uses an AI model to do speech recognition. Then the server send back the result to the client.
 
-## Getting Started
+### Tech Stack
 
-**Got 2 minutes?** Check out a video overview of our product:
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge\&logo=PyTorch\&logoColor=white) ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge\&logo=python\&logoColor=blue) ![Socketio](https://img.shields.io/badge/Socket.io-010101?\&style=for-the-badge\&logo=Socket.io\&logoColor=whit)
 
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
+### Installation
 
-{% hint style="info" %}
-**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
-{% endhint %}
+Install my-project with npm
 
-### Guides: Jump right in
+```bash
+  npm install my-project
+  cd my-project
+```
 
-Follow our handy guides to get started on the basics as quickly as possible:
+### Run Locally
 
-{% content-ref url="guides/creating-your-first-project.md" %}
-[creating-your-first-project.md](guides/creating-your-first-project.md)
-{% endcontent-ref %}
+Clone the project
 
-{% content-ref url="guides/creating-your-first-task.md" %}
-[creating-your-first-task.md](guides/creating-your-first-task.md)
-{% endcontent-ref %}
+```bash
+  git clone https://github.com/pangineering/speech-recognition-socketio
+```
 
-{% content-ref url="guides/advanced-permissions.md" %}
-[advanced-permissions.md](guides/advanced-permissions.md)
-{% endcontent-ref %}
+Go to the project directory
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+```bash
+  cd speech-recognition-socketio
+```
 
-### Fundamentals: Dive a little deeper
+Create a virtual environment
 
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
+```bash
+  pipenv shell
+```
 
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
-{% endcontent-ref %}
+Install libraries
 
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
-{% endcontent-ref %}
+```bash
+  pip install -r requirement.txt
+```
 
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
-{% endcontent-ref %}
+Start the server
 
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
-{% endcontent-ref %}
+```bash
+  python server.py
+```
 
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}
+Run the client
+
+```bash
+  python client.py
+```
+
