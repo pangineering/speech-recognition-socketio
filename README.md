@@ -1,5 +1,5 @@
 ---
-description: Project Document
+description: Project Manual on how to install and run this project
 ---
 
 # Project Document
